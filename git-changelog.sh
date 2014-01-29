@@ -4,4 +4,4 @@ if [ -z ${1+x} ]; then
 	exit
 fi
 
-git log $1...$2 --pretty=format:'- %s' --reverse | grep -v Merge > CHANGELOG.txt & open CHANGELOG.txt
+git log $1...$2 --pretty=format:'- %s' --reverse | grep -v Merge >  /tmp/GIT-CHANGELOG.txt & open /tmp/GIT-CHANGELOG.txt
